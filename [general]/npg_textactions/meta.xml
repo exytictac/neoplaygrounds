@@ -1,0 +1,8 @@
+<meta>
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" />
+	<export function="sendMessage" type="server" />
+	<export function="sendMessage" type="client" />
+	<export function="sendGlobalMessage" type="server" />
+	<export function="Freeroam" type="client" />
+</meta>

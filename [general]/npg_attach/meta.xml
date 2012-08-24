@@ -1,0 +1,12 @@
+<meta>
+	<info author="Qais and Tommy" name="Attachments" version="1.0" />
+
+	<!-- Attachments -->
+	<script src="attach_c.lua" type="client" />
+	<script src="attach_s.lua" type="server" />
+	
+	<export function="isAttachOpened" type="client"/>
+	<export function="showAttach" type="client"/>
+	<export function="closeAttach" type="client"/>
+	<export function="getAttachWindow" type="client"/>
+</meta>

@@ -1,0 +1,13 @@
+<meta>
+<info author="[AFS]Qais" version="2" type="script" />
+
+<!--script src="chaticon_s.lua" type="server"/>
+<script src="chaticon_c.lua" type="client"/>
+<file src="icon.png" /-->
+
+<script src="channels.lua"/>
+<!--script src="channels_c.lua" type="client"/>
+<script src="util-c.lua" type="client"/>
+<file src="server_data.xml"/>
+<file src="client_data.xml"/-->
+</meta>

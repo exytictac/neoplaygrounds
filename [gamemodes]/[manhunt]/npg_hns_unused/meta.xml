@@ -1,0 +1,21 @@
+<meta>
+	<info author="qaisjp" version="1.0.0" description="Hide and Seek" />
+	
+	<!-- Grayscale shader by TopAz and optimised by qaisjp -->
+	<script src="c_bonus.lua" type="client" />
+	<file src="bonus.fx" />	
+	
+	<!-- compass images thanks to Otto -->
+	<file src="images/compass_close.png" />
+	<file src="images/compass_normal.png" />
+	<file src="images/compass_very_close.png" />
+	
+	<script src="s_util.lua" type="server" />
+	<script src="c_utils.lua" type="client" />
+	
+	<script src="server.lua" type="server" />
+	<script src="s_functions.lua" type="server" />
+	<script src="s_radars.lua" type="server" />
+	
+	<script src="client.lua" type="client" />
+</meta>

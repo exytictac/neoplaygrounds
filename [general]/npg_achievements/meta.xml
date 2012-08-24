@@ -1,0 +1,5 @@
+<meta>
+    <info name="npg_pm" author="VIO" description="PM System" version="1.0" type="script"></info>
+    <script src="client.lua" type="client"></script>
+    <script src="server.lua" type="server"></script>
+</meta>

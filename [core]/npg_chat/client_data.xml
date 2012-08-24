@@ -1,0 +1,5 @@
+<root>
+    <channel name="Default" selected="1" current="1" />
+    <channel name="group" selected="0" current="0" />
+    <channel name="member" selected="1" current="0" />
+</root>

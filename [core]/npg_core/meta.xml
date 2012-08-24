@@ -1,0 +1,49 @@
+<meta>
+    <info type="script" name="Neo Playgrounds - General" author="NPG Team" version="1.0.0" />
+	
+	<include resource="openframe" />
+	
+	
+	
+	<!-- Images -->
+	<file src="images/icons/race.png"             />
+	<file src="images/icons/freeroam.png"         />
+	<file src="images/icons/king-of-the-hill.png" />
+	<file src="images/icons/rpg.png"              />
+	<file src="images/icons/manhunt.png"          />
+	<file src="images/tutorial.png"               />
+	<file src="images/icons/croatian.png"         />
+	<file src="images/icons/spanish.png"          />
+	<file src="images/icons/english.png"          />
+	<file src="images/icons/polish.png"           />
+	<file src="images/icons/dutch.png"            />
+	<file src='images/nav/left.png'               />
+	<file src='images/nav/leftHover.png'          />
+	<file src='images/nav/right.png'              />
+	<file src='images/nav/rightHover.png'         />
+	
+	
+	<!-- Fonts -->
+    <file src="BleedingCowboys.ttf" />
+   	<file src="FortuneCity.ttf"     />
+	
+	<!-- Client scripts -->
+	<script src="client.lua" type="client" />
+	<script src="client/languages.lua" type="client" />
+	<script src="client/login.lua" type="client" />
+	<script src="client/register.lua" type="client" />
+	<script src="client/gamemodes.lua" type="client" />
+	<script src='client/rules.lua' type='client'/>
+    <script src="client/client_anim.lua" type="client" />
+    <script src="gui.lua" type="client"  />
+
+	
+	<!-- Server scripts -->
+	<script src="server.lua" />
+	<script src="s_main.lua" />
+	
+	<!-- Exports -->
+	<export function="onServerGuide" type="server" />
+	<export function="eventGamemode" type="client" />
+	<export function="isPlayerLogged" type="server" />
+</meta>

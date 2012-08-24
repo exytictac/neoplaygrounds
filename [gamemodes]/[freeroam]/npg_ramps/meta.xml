@@ -1,0 +1,4 @@
+<meta>
+<script src="ramps_c.lua" type="client" />
+<script src="ramps_s.lua" type="server" />
+</meta>

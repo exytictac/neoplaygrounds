@@ -1,0 +1,38 @@
+<meta>
+
+
+	<script src = "client.lua" type = "client" />
+	<script src = "taxi_c.lua" type = "client" />
+	<script src = "limo_c.lua" type = "client" />
+	<script src = "pizza_c.lua" type = "client" />
+	<script src = "military_c.lua" type = "client" />
+	<script src = "bus_c.lua" type = "client" />
+	<script src = "medic_c.lua" type = "client" />
+	<script src = "medic_s.lua" type = "server" />
+	<script src = "pizza_s.lua" type = "server" />
+	<script src = "taxi_s.lua" type = "server" />
+	<script src = "taxi_s.lua" type = "server" />
+	<script src = "military_s.lua" type = "server" />
+	<script src = "bus_s.lua" type = "server" />
+	<script src = "server.lua" type = "server" />
+	<script src = "j-jobs.settings.server.lua" type = "server" />
+	<script src = "j-jobs.police.server.lua" />
+	<script src = "j-jobs.police.client.lua" type = "client" />
+	<script src = "j-jobs.trader.server.lua" />
+	<script src = "j-jobs.trader.client.lua" type = "client" />
+	<script src = "j-jobs.mechanic.server.lua" />
+	<script src = "j-jobs.mechanic.client.lua" type = "client" />
+	<script src = "j-jobs.hitman.server.lua" />
+	<script src = "j-jobs.seeker.server.lua" />
+	<script src = "j-jobs.seeker.client.lua" type = "client" />
+	<script src = "j-jobs.utils.server.lua" />
+	<script src = "j-jobs.utils.client.lua" type = "client" />
+	
+	<file src = "1.mp3" />
+	<file src = "2.mp3" />
+	<file src = "3.mp3" />
+	<file src = "4.mp3" />
+	<file src = "5.mp3" />
+	<file src = "cash.mp3" />
+	
+</meta>

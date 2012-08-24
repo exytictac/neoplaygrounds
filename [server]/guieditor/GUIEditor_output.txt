@@ -1,0 +1,32 @@
+
+-- Created: 30/ 4/2012 18:33
+GUIEditor_Window = {}
+GUIEditor_Button = {}
+GUIEditor_Label = {}
+GUIEditor_Edit = {}
+GUIEditor_Progress = {}
+
+GUIEditor_Window[1] = guiCreateWindow(0.3258,0.3691,0.3398,0.1289,"Change your statistics",true)
+guiWindowSetSizable(GUIEditor_Window[1],false)
+GUIEditor_Label[1] = guiCreateLabel(10,30,41,19,"Fat:",false,GUIEditor_Window[1])
+guiLabelSetVerticalAlign(GUIEditor_Label[1],"center")
+guiLabelSetHorizontalAlign(GUIEditor_Label[1],"right",false)
+GUIEditor_Progress[1] = guiCreateProgressBar(52,26,321,24,false,GUIEditor_Window[1])
+GUIEditor_Edit[1] = guiCreateEdit(377,26,49,22,"0%",false,GUIEditor_Window[1])
+GUIEditor_Label[2] = guiCreateLabel(11,51,40,19,"Muscle:",false,GUIEditor_Window[1])
+guiLabelSetVerticalAlign(GUIEditor_Label[2],"center")
+guiLabelSetHorizontalAlign(GUIEditor_Label[2],"right",false)
+GUIEditor_Progress[2] = guiCreateProgressBar(52,49,321,24,false,GUIEditor_Window[1])
+GUIEditor_Edit[2] = guiCreateEdit(377,51,49,22,"0%",false,GUIEditor_Window[1])
+GUIEditor_Label[3] = guiCreateLabel(6,75,46,19,"Max HP:",false,GUIEditor_Window[1])
+guiLabelSetVerticalAlign(GUIEditor_Label[3],"center")
+guiLabelSetHorizontalAlign(GUIEditor_Label[3],"right",false)
+GUIEditor_Progress[3] = guiCreateProgressBar(52,71,321,24,false,GUIEditor_Window[1])
+GUIEditor_Edit[3] = guiCreateEdit(377,75,49,22,"0%",false,GUIEditor_Window[1])
+GUIEditor_Button[1] = guiCreateButton(9,104,212,20,"Cancel changes",false,GUIEditor_Window[1])
+GUIEditor_Button[2] = guiCreateButton(223,104,203,20,"Save changes",false,GUIEditor_Window[1])
+
+
+
+
+--- --- --- --- ---

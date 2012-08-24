@@ -1,0 +1,14 @@
+<meta>
+    <info author="Tommy" name="Staff" version="1.0"></info>
+    <script src="stafflog_c.lua" type="client"></script>
+    <script src="stafflog_s.lua" type="server"></script>
+    <script src="lamppost_c.lua" type="client"></script>
+    <script src="lamppost_s.lua" type="server"></script>
+    <script src="spam.lua" type="server"></script>
+    <script src="weapon.lua" type="server"></script>
+    <script src="health.lua" type="server"></script>
+    <script src="vehicles.lua" type="server"></script>
+    <script src="nick.lua" type="server"></script>
+    <script src="staffonline_s.lua" type="server"></script>
+    <script src="staffonline_c.lua" type="client"></script>
+</meta>

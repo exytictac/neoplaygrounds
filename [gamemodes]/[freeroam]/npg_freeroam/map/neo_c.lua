@@ -1,0 +1,1 @@
+addEventHandler('onClientResourceStart', resourceRoot,	function()		txd = engineLoadTXD ( "map/vgsn_billboard.txd" )		engineImportTXD ( txd, 7301 )		removeWorldModel(10764,100,-1044,448,16.4)	end)

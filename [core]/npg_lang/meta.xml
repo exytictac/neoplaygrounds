@@ -1,0 +1,34 @@
+<meta>
+    <info type="script" name="Neo Playgrounds - Language system" author="NPG Team" version="1.0.0" />
+    
+	<script src="lang.lua" type="server" />
+    <script src="lang.lua" type="client" />
+	
+	<script src="langs/english.lua" type="server" />
+    <script src="langs/english.lua" type="client" />
+
+	<script src="langs/spanish.lua" type="server" />
+    <script src="langs/spanish.lua" type="client" />
+	
+	<script src="langs/dutch.lua" type="server" />
+    <script src="langs/dutch.lua" type="client" />
+	
+	<script src="langs/polish.lua" type="server" />
+    <script src="langs/polish.lua" type="client" />
+	
+	<script src="langs/croatian.lua" type="server" />
+    <script src="langs/croatian.lua" type="client" />
+	
+	<script src="interface.lua" type="client" />
+	
+	<file src="flags/en.png"/>
+	<file src="flags/es.png"/>
+	<file src="flags/pl.png"/>
+	<file src="flags/hr.png"/>
+	<file src="flags/nl.png"/>
+		
+	<include resource="npg_info"/>
+	 	
+	<export function="__" type="server" />
+	<export function="__" type="client" />
+</meta>

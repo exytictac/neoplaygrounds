@@ -1,0 +1,14 @@
+<meta>
+	<info author="xbost" version="1.0.3" type="script" name="DDC Speedometer" description="Drunk Drivers Club speedometer" showInResourceBrowser="true" />
+	<script src="speed_client.lua" type="client" />
+	<file src="img/speed_bg.png" />
+	<file src="img/speed_labels.png" />
+	<file src="img/speed_hp.png" />
+	<file src="img/speed_bg_glow.png" />
+	<file src="img/speed_innerring.png" />
+	<file src="img/speed_outerring.png" />
+	<file src="img/speed_needle.png" />
+	<file src="img/speed_needle_s.png" />
+	<file src="img/speed_cover.png" />
+	<file src="img/speed_crack.png" />  
+</meta>

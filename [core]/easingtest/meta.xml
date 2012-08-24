@@ -1,0 +1,13 @@
+<meta>
+    <info type="script" name="Neo Playgrounds - easing anims" author="NPG Team" version="1.0.0" />
+    
+	<script src="easing_anim.lua" type="client" />
+	
+	<export function="load" type="client" />
+	
+	<file src="flags/en.png"/>
+	<file src="flags/es.png"/>
+	<file src="flags/pl.png"/>
+	<file src="flags/hr.png"/>
+	<file src="flags/in.png"/>
+</meta>

@@ -1,0 +1,7 @@
+<meta>
+	
+	<script src="Hay.lua" type="server" />	
+	<script src="Hay_client.lua" type="client" />
+	<script src="client_anim.lua" type="client" />
+	<file src="tutorial.png" />
+</meta>

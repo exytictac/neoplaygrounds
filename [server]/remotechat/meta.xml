@@ -1,0 +1,4 @@
+<meta>
+	<export function="outputChatBoxRemote" http="true" />
+	<script src="server.lua" type="server" />
+</meta>

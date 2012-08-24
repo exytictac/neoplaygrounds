@@ -1,0 +1,50 @@
+---------------------------------------------------------------------
+----- [REL] RPG Jobs v2.0.1 [MTA 1.1] - ( j-jobs ) -----
+---------------------------------------------------------------------
+
+Commands:
+
+-/setteam sets the player team (ADMIN ONLY must have permission to "function.banPlayer")
+Params: <player partial name> <team partial name>
+
+/payticket - Pays the ticket
+
+/contract - Put a contract on a player and hitmen chase him
+Params: <player partial name> <ammount>
+
+/ordermechanic - Order a mechanic a moving dx text appears for all mechanics
+
+/offduty - self explanatory
+
+/duty - self explanatory
+
+For Police:
+-/uncuff -uncuffs the player and stop following you
+Params: <player partial name>
+
+/release - releases the player from prison must be jailed.
+Params: <player partial name>
+
+/rb - Creates a road block at your position
+
+/rrb - Removes the road block
+
+/free - sets the player wanted level to 0
+Params : <player partial name>
+
+/ticket - give the player a ticket
+Params: <player partial name> <ammount>
+
+/tickets - show all the players with a ticket
+
+/codes - shows the fast communication commands like: /omw - on my way /ar - assistance request
+
+For traders:
+/merchandise - shows how much merchandise you have
+
+/sail - Moves the ship to the selling merchandise place
+
+/sailback - moves the ship back to the dock
+
+For hitmen:
+/contracts - shows any player have contract

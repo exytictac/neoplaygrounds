@@ -1,0 +1,16 @@
+<meta>
+	<info type="script" name="Neo Playgrounds - KOTH" author="NPG Team" version="1.0.0" />
+	
+	<map src="koth.map" dimension="0"/>
+	
+	<!-- Images -->
+	<file   src='images/left.png' />
+	<file   src='images/leftHover.png' />
+	<file   src='images/right.png' />
+	<file   src='images/rightHover.png' />
+	
+	<!-- Scripts -->
+	<script src='server.lua' type='server'/>
+	<script src='client.lua' type='client'/>
+
+</meta>

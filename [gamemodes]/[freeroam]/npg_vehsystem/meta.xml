@@ -1,0 +1,7 @@
+<meta>
+        <info author="Various Authors" type="script" name="Vehicle Switcher" version="1.0.0" description="Fast Vehicle Switch"/>
+
+        <script src="s_conf.lua" type="server"/>
+        <script src="s_utils.lua" type="server"/>
+        <script src="s_sv.lua" type="server"/>
+</meta>

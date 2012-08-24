@@ -1,0 +1,14 @@
+<help popup="no">
+Car Locks version 1.1
+by vick.
+
+Commands: affect last vehicle driven
+/lock	-	lock vehicle
+/unlock - 	unlock vehicle
+/lights -	toggle lights
+/engine -	toggle engine
+
+Binds: always on
+"l"  -  lock/unlock toggle
+
+</help>

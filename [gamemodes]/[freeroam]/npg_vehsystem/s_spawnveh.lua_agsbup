@@ -1,0 +1,178 @@
+
+-- ***********************************************
+-- * TMS Extras / Vehicle spawn                  *
+-- * Written by Tommy (c) 2010                   *
+-- * Optimised by Qais and Andrew(c) 2011        *
+-- ***********************************************
+
+local id = 0
+-- ************
+-- * Commands *
+-- ************
+function spawnVeh(thePlayer, command, ...)
+	if (getElementDimension(thePlayer) < 100) then
+		if (getElementData(thePlayer, "inJail") == true) or (exports.exports:getPlayerGamemode(thePlayer) == "hay") or (exports.exports:getPlayerGamemode(thePlayer) == "none") or (getElementData(thePlayer, "isPlayerGlued") == true) then
+			if (exports.exports:getPlayerGamemode(thePlayer) == "none") then
+				return
+			elseif getElementData(thePlayer, "isPlayerGlued") == true then
+				return
+			else
+				outputChatBox("You can't spawn a vehicle here.", thePlayer, 255, 0, 0, false)
+				return
+			end
+			return
+		end
+
+		local playerInVehicle = { }
+		local playersToWarp = 0
+		local orx = nil
+		local ory = nil
+		local orz = nil
+		local ovx = nil
+		local ovy = nil
+		local ovz = nil
+		local ovc1 = nil
+		local ovc2 = nil
+		local ovc3 = nil
+		local ovc4 = nil
+		local ovpj = nil
+
+		-- Get the name of the vehicle to create.
+		local vehicleName = table.concat({...}, " ")
+		-- If the player has already a vehicle, we destroy it.
+		local oldVehicle = getPedOccupiedVehicle(thePlayer)
+		
+		if oldVehicle then
+			if getElementModel(oldVehicle) == getVehicleModelFromName(vehicleName) then
+				return
+			end
+		
+			orx, ory, orz = getVehicleRotation(oldVehicle)
+			ovx, ovy, ovz = getElementVelocity(oldVehicle)
+			ovc1, ovc2, ovc3, ovc4 = getVehicleColor ( oldVehicle )
+			ovpj = getVehiclePaintjob ( oldVehicle )
+			--ohrspd = getHelicopterRotorSpeed( oldVehicle)
+			distanceBetween = 0.67
+		
+			local seat = 1
+			local maxPassengers = getVehicleMaxPassengers(oldVehicle)
+			if (maxPassengers ~= false) then
+				while (seat <= maxPassengers) do
+					thePlayerInVehicle = getVehicleOccupant(oldVehicle, seat)
+					if (thePlayerInVehicle) then
+						if (thePlayerInVehicle ~= thePlayer) then
+							playerInVehicle[#playerInVehicle + 1] = thePlayerInVehicle
+							playersToWarp = playersToWarp + 1
+						end
+					end
+					seat = seat + 1
+				end
+			end
+
+			if (getPedOccupiedVehicleSeat(thePlayer) == 0) then
+				local modelID = getVehicleModelFromName(vehicleName)
+				if (vehicleName ~= "none") then
+					if tonumber(vehicleName) then
+						modelID = tonumber(vehicleName)
+					end
+					if modelID then
+						destroyElement(oldVehicle)
+					else
+						outputChatBox("*#00AAFFERROR: #FFFFFFUnknown vehicle!", thePlayer, 255, 255, 255, true)
+						return
+					end
+				else
+					destroyElement(oldVehicle)
+				end
+				-- Edit end
+			else
+				outputChatBox("You are not the driver.", thePlayer, 255, 0, 0, false)
+				return
+			end
+		end
+
+		if (vehicleName ~= "none") then
+			-- Get current position of the player.
+			local px, py, pz = getElementPosition(thePlayer)
+			local rz = getPedRotation(thePlayer)
+		
+			if (orz ~= nil) then
+				rz = orz
+				
+			end
+			
+			if distanceBetween == nil then
+				distanceBetween = 0
+			end
+
+			if not tonumber(vehicleName) then
+				-- Create the vehicle.
+				modelID = getVehicleModelFromName(vehicleName)				
+			else
+				modelID = tonumber(vehicleName)
+			end
+			if not getVehicleNameFromModel(modelID) then
+				outputChatBox("*#00AAFFERROR: #FFFFFFUnknown vehicle!", thePlayer, 255, 255, 255, true)
+				return
+			end
+			local theVehicle = createVehicle(modelID, px, py, pz+distanceBetween, 0, 0, rz, "AF CLAN!")
+			setElementDimension(theVehicle, getElementDimension(thePlayer))
+			--setVehicleLocked ( theVehicle, true )
+			
+			if (ovc1 ~= nil) then
+				setVehicleColor ( theVehicle, ovc1, ovc2, ovc3, ovc4 )
+			end
+			
+			if (ovpj ~= nil) then
+				setVehiclePaintjob ( theVehicle, ovpj )
+			end
+			
+			if (orx ~= nil) then
+				setVehicleRotation ( theVehicle, orx, ory, orz )
+			end
+				
+			if (ohrspd ~= nil and ohrspd ~= false) then
+				--setHelicoptorRotorSpeed(theVehicle, ohrspd)
+			end
+				
+			if (not theVehicle) then
+				outputChatBox(" * #00AAFFERROR: #FFFFFFFailed to create vehicle!", thePlayer, 255, 0, 0, true)
+				return
+			end
+
+			-- Warp the player in this vehicle.
+			warpPedIntoVehicle(thePlayer, theVehicle, 0)
+			-- If there are others players in vehicle, warp them.
+			if (playersToWarp > 0) then
+				local seat = 1
+				local maxPassengers = getVehicleMaxPassengers(theVehicle)
+				if (maxPassengers ~= false) then
+					while (seat <= maxPassengers) do
+						if (playerInVehicle[seat]) then
+							warpPedIntoVehicle(playerInVehicle[seat], theVehicle, seat)
+						end
+						seat = seat + 1
+					end
+				end
+			end
+			if (ovx ~= nil) then
+				setElementVelocity(theVehicle, ovx, ovy, ovz)
+				--setHelicopterRotorSpeed(theVehicle, ohrspd)
+			end
+		end
+	end
+end
+
+-- ****************************
+-- * Add all command handlers *
+-- ****************************
+addCommandHandler("sv", spawnVeh)
+
+function whenEnteredVehicle(thePlayer, theSeat, theJacked, theDoor)
+	if isVehicleLocked(source) == true then
+		outputChatBox("This vehicle is locked", thePlayer, 255, 50, 0)
+		cancelEvent()
+	end
+end
+
+addEventHandler("onVehicleStartEnter", getRootElement(), whenEnteredVehicle)

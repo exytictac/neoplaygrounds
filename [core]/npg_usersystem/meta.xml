@@ -1,0 +1,14 @@
+<meta>
+	<info author="noddy" name="Usersystem" version="2" />
+	
+	<include resource="npg_textactions" />
+
+	<!-- Main routines -->
+	<script src="main_c.lua" type="client" />
+	<script src="main_s.lua" type="server" />
+	<script src="usersystem.lua" type="server" />
+	
+	<!-- User manager -->
+	<script src="usermanager_c.lua" type="client" />
+	<script src="usermanager_s.lua" type="server" />
+</meta>

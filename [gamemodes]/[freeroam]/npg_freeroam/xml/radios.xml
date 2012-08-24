@@ -1,0 +1,31 @@
+﻿<root>
+	<radio name="User Track Player" path="12" type="0"/>
+	<radio name="Kwejk fm" path="http://fm.kwejk.pl/kwejkfm_aac.m3u"  type="4"/>
+	<radio name="Dubstep, drum and bass" path="http://dubstep.fm/listen.pls"  type="2"/>
+	<radio name="Best blues station" path="http://64.62.252.130:9032/listen.pls"  type="3"/>
+	<radio name="Classic music" path="http://sc1.abacast.com:8220/listen.pls"  type="3"/>
+	<radio name="Country" path="http://shoutcast.internet-radio.org.uk:10656/listen.pls"  type="3"/>
+	<radio name="Electro, dance, house" path="http://stream.electroradio.ch:26630/listen.pls" type="2" />
+	<radio name="90s grunge rock" path="http://173.193.14.170:8006/listen.pls"  type="1"/>
+	<radio name="Rock, metal and alternative" path="http://screlay-dtc0l-1.shoutcast.com:8012/listen.pls" type="1" />
+	<radio name="60s 70s 80s 90s rock" path="http://cp.internet-radio.org.uk:15476/listen.pls" type="3" />
+	<radio name="Pop, dance, trance" path="http://cp.internet-radio.org.uk:15114/listen.pls" type="4" />
+	<radio name="Psychodelic, Progressive rock" path="http://krautrock.pop-stream.de:7592/listen.pls" type="1" />
+	<radio name="Hip hop, rap, rnb" path="http://mp3uplink.duplexfx.com:8054/listen.pls" type="4" />
+	<radio name="Filth FM" path="http://lemon.citrus3.com/castcontrol/playlist.php?id=51&type=pls" type="2" />
+	<radio name="Reggae n Dancehall music" path="http://www.raggakings.net/listen.wax" type="2" />
+	<radio name="Dirty South FM" path="http://www.dirtysouthradioonline.com/broadband-128.asx" type="4" />
+	<radio name="Smooth Beats" path="http://www.smoothbeats.com/hiphop.asx" type="4" />
+	<radio name="Smooth Jazz Station" path="http://www.1.fm/go/baysmoothjazz128k.asx" type="4" />
+	<radio name="POLISH SATAN METAL STATION" path="http://195.94.205.211/rm" type="1" />
+	<radio name="BBC One" path="http://sradio.tv/stream/1827.m3u" type="4" />
+	<radio name="BBC Two" path="http://www.bbc.co.uk/radio/listen/live/r2.asx" type="4" />
+	<radio name="BBC Three" path="http://bbc.co.uk/radio/listen/live/r3.asx" type="4" />
+	<radio name="Rock Web Station" path="http://100xr.redirectme.net/100xr.asx" type="1" />
+	<radio name="Ponceo dot com!" path="http://ponceo.com/listen/playlist.pls" type="4" />
+	<!--<radio name="test direct linka" path="http://www16.speedyshare.com/files/30069639/download/Butch%20Clancy%20-%20Russian%20Lullaby.mp3" type="4" />-->
+
+	
+	<!--radio type 0 = GTA radio; type 1 = grunge font for metal, rock etc; type 2 = future font for electro, techno, dubstep, rave, dance etc; type 3 = brush font for 60&70&80&90, classic, psychodelic and progressive, type 4 = other, normal font like in type 0 (but dont use type 0) -->
+	<!-- type = gta radio, type 1+ = internet radio -->
+</root>

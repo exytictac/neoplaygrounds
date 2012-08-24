@@ -1,0 +1,4 @@
+<root>
+	<channel name="group" broadcastOnly="true" defaultState="off" description="Groupchat invites" abb="group" abbCol="#FFFF00" textcol="#FFFFFF"/>
+	<channel name="member" description="Member chat" command="member" bind="u" restrictedTo="2" abb="MEMBER" abbCol="#00FF00" textcol="#FFFFFF"/>
+</root>

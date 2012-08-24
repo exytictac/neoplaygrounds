@@ -1,0 +1,5 @@
+<meta>
+	<script src='save.lua'/>
+	<script src='freecam.lua' type='client'/>
+	<script src='delete.lua' type='client'/>
+</meta>

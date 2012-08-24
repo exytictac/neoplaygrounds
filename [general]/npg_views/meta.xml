@@ -1,0 +1,5 @@
+<meta>
+	<info author="qaisjp" version="1.0.0" type="script" name="vehicle views" showInResourceBrowser="true" />
+	<script src="client.lua" type="client" />
+
+</meta>

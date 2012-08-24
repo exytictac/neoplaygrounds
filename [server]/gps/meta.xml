@@ -1,0 +1,7 @@
+<meta>
+	<info author='Alex' name='AxGPS' version='1.0.2' description='GPS A Player Easily With (blip / 3D line / distance / zonename)' type='script' />
+	<script src='client.lua' type='client' />
+	<settings>
+		<setting name='blipicon' value='60' />
+	</settings>
+</meta>

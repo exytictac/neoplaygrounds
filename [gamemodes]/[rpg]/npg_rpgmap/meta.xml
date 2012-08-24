@@ -1,0 +1,16 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <info type="map" name="RPG Map" author="NPG Team" version="0.1"></info>
+    <map src="npg_rpgmap.map" dimension="100"></map>
+    <settings>
+        <setting name="#minplayers" value="[ 0 ]"></setting>
+        <setting name="#maxplayers" value="[ 128 ]"></setting>
+        <setting name="#gravity" value="[ 0.008000 ]"></setting>
+        <setting name="#weather" value="[ 0 ]"></setting>
+        <setting name="#time" value="12:0"></setting>
+        <setting name="#locked_time" value="[ false ]"></setting>
+        <setting name="#waveheight" value="[ 0 ]"></setting>
+        <setting name="#gamespeed" value="[ 1 ]"></setting>
+    </settings>
+</meta>

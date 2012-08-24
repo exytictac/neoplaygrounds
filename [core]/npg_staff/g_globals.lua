@@ -1,0 +1,1 @@
+function iif(a,b,c) return a and b or c endfunction getPlayerClass(source) return getElementData(source, "auth") or 0 end

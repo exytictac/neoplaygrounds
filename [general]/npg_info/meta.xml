@@ -1,0 +1,13 @@
+<meta>
+    <script src="client.lua" type="client" />
+    <script src="client_anim.lua" type="client" />
+    
+    <file src="infologo.png" />
+    <file src="logo.png" />
+	<file src="bar.png" />
+	<file src="radio.png" />
+    
+    <export function="add" type="client" />
+    <export function="interfaces" type="client" />
+
+</meta>

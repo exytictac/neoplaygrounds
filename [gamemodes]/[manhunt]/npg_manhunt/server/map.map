@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <marker id="bd-bounce-1" type="cylinder" color="#0000ff11" size="7" interior="15" dimension="420" posX="-1443.4851074219" posY="931.36724853516" posZ="1033.3923339844" rotX="0" rotY="0" rotZ="0" />
+    <marker id="bd-bounce-2" type="cylinder" color="#0000ff11" size="7" interior="15" dimension="420" posX="-1462.5927734375" posY="937.14562988281" posZ="1035.0570068359" rotX="0" rotY="0" rotZ="0" />
+	<marker id="bd-bounce-3" type="cylinder" color="#0000ff11" size="7" interior="15" dimension="420" posX="-1424.0760498047" posY="929.90887451172" posZ="1035.2266845703" rotX="0" rotY="0" rotZ="0" />
+</map>

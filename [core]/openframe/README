@@ -1,0 +1,8 @@
+This is OpenFrame 2.0 Nightly. It shouldn't be used in production enviroment!
+
+Copyright (C) 2011-2012 Piotr "Orange" Zduniak and other contributers. Licensed under MIT license.
+
+var_dump function copied from MTA:SA wiki under license of Creative Commons CC by SA
+GUI Classes were written by 50p. Added to OpenFrame with permission of author.
+Menu classes were written by Lord_Azamath (forum: Lordy). Added to openFrame with permission of author.
+Graph class were written by Gamesnert. Added to openFrame with permission of author.

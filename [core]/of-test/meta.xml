@@ -1,0 +1,5 @@
+<meta>
+	<include resource="openframe" />
+	
+	<script src="loader.lua" type="client" />
+</meta>

@@ -1,0 +1,14 @@
+<meta>
+	 <info author="Neo Playgrounds - Team" name="Drag Race" description="Drag race gamemode" type="gamemode" version="1" edf:definition="dragrace.edf" />
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" />
+	<script src="client_anim.lua" type="client" />
+	
+	<file src="images/countdown_0.png" />
+	<file src="images/countdown_1.png" />
+	<file src="images/countdown_2.png" />
+	<file src="images/countdown_3.png" />
+	<file src="PowerChord.ttf" />
+	
+	<include resource="npg_cd" />
+</meta>

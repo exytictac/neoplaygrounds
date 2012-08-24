@@ -1,0 +1,17 @@
+<def name="Drag Race">
+	<element name="spawnpoint" friendlyname="Spawnpoint" icon="edf/spawnpoint.png">
+		<data name="position" type="coord3d" default="0,0,0" />
+		<data name="rotation" type="coord3d" default="0,0,0" />
+		<data name="vehicle" type="vehicleID" default="522" />
+		<vehicle model="!vehicle!" rotation="!rotation!"/>
+	</element>
+	<element name="checkpoint" friendlyname="Checkpoint" icon="edf/checkpoint.png">
+		<data name="position" type="coord3d" default="0,0,0" />
+		<data name="type" type="selection:checkpoint,ring,corona" default="checkpoint" />
+		<data name="color" type="color" description="color (#RRGGBBAA hex string)" default="#00F9" />
+		<data name="size" type="number" description="marker size" default="2.25" />
+		<data name="nextid" type="element:checkpoint" description="The next checkpoint after this one" required="false" default="" />
+		<data name="vehicle" type="vehicleID" required="false"/>
+		<marker color="!color!" type="!type!" size="!size!"/>
+	</element>
+</def>

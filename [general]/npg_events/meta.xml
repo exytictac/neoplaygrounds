@@ -1,0 +1,7 @@
+<meta>
+	<info author="qaisjp" name="Events" version="1.0" />
+
+	<script src="s_flood.lua" type="server" />
+	<script src="s_main.lua" type="server" />
+	<script src="c_main.lua" type="client" />
+</meta>

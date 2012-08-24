@@ -1,0 +1,32 @@
+--[[Las_Venturas = createRadarArea ( 784, 2984, 2200, -2400, 0, 255, 0, 120 )
+
+Desert1 = createRadarArea ( -1876, 2957, 2600, -1400, 200, 0, 200, 120 )
+Desert2 = createRadarArea ( -1239, 1562, 1965, -1000, 200, 0, 200, 120 )
+
+San_Fierro = createRadarArea ( -2970, 1451, 1700, -2400, 200, 200, 0, 120 )
+
+Bayside = createRadarArea ( -2917, 2924, 900, -900, 200, 0, 0, 120 )
+
+CountrySide1 = createRadarArea ( -2939, -1210, 3000, -1700, 0, 0, 200, 120 )
+CountrySide2 = createRadarArea ( -868, 514, 3800, -1200, 0, 0, 200, 120 )
+CountrySide3 = createRadarArea ( -868, -689, 925, -520, 0, 0, 200, 120 )
+
+Los_Santos = createRadarArea ( 118, -815, 2800, -2000, 0, 200, 200, 120 )]]
+
+How I will go about the project.
+
+Person joins..
+if game started -> go to lobby
+if game not started and area voted ->
+   go to spawn point
+   select random person from team
+   allow others to hide
+   wait HUNTING TIME
+   hunt!
+if game end -> start vote
+	spawn people from lobby and rest to spawnpoint
+	start the game
+	
+Person leaves
+if hunter ->
+	restart level

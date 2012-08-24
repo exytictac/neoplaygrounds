@@ -1,0 +1,32 @@
+<meta>
+	<info author="qaisjp" description="Blood Derby! Destruction in the BLOODBOWL!"/>
+	
+	<script src="shared/g_conf.lua"    type="server" />
+	<script src="shared/g_conf.lua"    type="client" />
+	
+	<script src="client/client_anim.lua" type="client" />
+	<script src="client/c_gui.lua"            type="client" />
+	<script src="client/c_gui.dsv.lua"        type="client" />
+	<script src="client/c_nametags.lua"       type="client" />
+	<!--script src="client/c_news.lua"           type="client" /-->
+	<script src="client/c_shop.lua"           type="client" />
+	<script src="client/c_shop.bottle.lua"    type="client" />
+	<script src="client/c_shop.rocketcar.lua" type="client" />
+	<script src="client/c_main.lua"           type="client" />
+	
+	<script src="server/s_main.lua"           type="server" />
+	<script src="server/s_shop.lua"           type="server" />
+	<script src="server/s_shop.bottle.lua"    type="server" />
+	<script src="server/s_shop.rocketcar.lua" type="server" />
+	<file src="BleedingCowboys.ttf" />
+	
+	<config src="server/spawns.xml"              type="server" />
+	
+	
+	<map    src="server/map.map" dimension="0" />
+	
+	<!--
+	<export function=".." />
+	<export function=".." type="client" />
+	-->
+</meta>

@@ -1,0 +1,38 @@
+<meta>
+
+	<!-- Help window -->
+	<script src="c_help.lua" type="client" />
+	<script src="c_topics.lua" type="client" />
+	
+	<!--Anim files -->
+	<script src="client_anim.lua" type="client" />
+
+	<!-- Exported functions -->
+	<export function="showWindow" type="client" />
+	<export function="hideWindow" type="client" />
+	<export function="isFeatureEnabled" type="client" />
+	<export function="isFeatureEnabled" type="server" />
+	<export function="enableFeature" type="server"/>
+	<export function="enableFeature" type="client"/>
+	<export function="getPlayerPoints" type="client" />
+	<export function="getPlayerAchievements" type="server" />
+	<export function="getWorkingDimension" type="client" />
+	<export function="getWorkingDimension" type="server" />
+	<export function="isPlayerLoggedIn" type="server" />
+	<export function="isPlayerLoggedIn" type="client" />
+	<export function="getPoolElementsByType" type="server" />
+	<export function="getClassFromName" type="server" />
+	<export function="getClassFromName" type="client" />
+	<export function="getClassName" type="server" />
+	<export function="getClassName" type="client" />
+	<export function="getPlayerGamemode" type="server" />
+	<export function="getPlayerGamemode" type="client" />
+	<export function="isValidType" type="server" />
+	<export function="isPlayerReady" type="server" />
+	<export function="isPlayerReady" type="client" />
+	<export function="getElement" type="server" />
+	<export function="getPlayerMinigame" type="server" />
+	<export function="getPlayerMinigame" type="client" />
+	<export function="getAuth" type="server" />
+	<export function="getAuth" type="client" />
+</meta>

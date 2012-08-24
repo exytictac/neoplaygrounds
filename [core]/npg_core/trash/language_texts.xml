@@ -1,0 +1,20 @@
+﻿<texts>
+    <text id="text:wnd-char1"  en="Character Select" es="Selección de Personaje" />
+    <text id="text:wnd-char2"  en="Character Info"   es="Info. de Personaje" />
+    
+
+    <text id="login"    en="Log In"   es="Entrar" />
+    <text id="account"  en="Account"  es="Cuenta" />
+    <text id="password" en="Password" es="Contraseña" />
+    <text id="confirm"  en="Confirm"  es="Confirmar" />
+    <text id="cancel"   en="Cancel"   es="Cancelar" />
+    <text id="register" en="Continue" es="Continuar" />
+    <text id="slot"     en="Slot"     es="Bloque" />
+    <text id="name"     en="Name"     es="Nombre" />
+    <text id="age"      en="Age"      es="Edad" />
+    <text id="cash"     en="Cash"     es="Dinero" />
+    <text id="job"      en="Job"      es="Trabajo" />
+	
+    <text id="Undefined" en="Undefined" es="Indefinid@" />
+    <text id="None"      en="None"      es="Ninguno" />
+</texts>
